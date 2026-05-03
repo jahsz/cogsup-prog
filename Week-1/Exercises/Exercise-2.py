@@ -15,12 +15,18 @@ Write a for-loop that prints out the following line 20 times:
  All work and no play makes Jack a dull boy.
 """
 
-print("Exercise 2.1")
 
 pass
 
-print("---")
+print("Exercise 2.1")
+
+for i in range(20):
+   print("All work and no play makes Jack a dull boy")
+
+
+
 """
+
 Exercise 2.2
 
 Task:
@@ -28,11 +34,15 @@ Task:
 Write a for-loop that prints out the numbers from 0 up to 5 inclusive.
 """
 
+
 print("Exercise 2.2")
+
 
 pass
 
-print("---")
+
+for i in range(6):
+   print(i)
 
 
 """
@@ -45,9 +55,12 @@ Write a for-loop that prints out the EVEN numbers from 2 up to 8 inclusive.
 
 print("Exercise 2.3")
 
+for i in (2, 9, 2):
+   print(i)
+
 pass
 
-print("---")
+
 
 """
 Exercise 2.4
@@ -55,13 +68,16 @@ Exercise 2.4
 Task:
 ------
 Now write another loop to print 9 through 0 (i.e., backwards).
+
 """
+
 
 print("Exercise 2.4")
 
 pass
 
-print("---")
+for i in reversed(range(10)):
+  print(i)
 
 """
 Exercise 2.5
@@ -78,12 +94,13 @@ Write code that prints out the following sequence:
  zzzzzzz
  zzzzzzzz
 """
-
 print("Exercise 2.5")
 
 pass
 
-print("---")
+for i in range(1, 9):
+   print (i * "z")
+
 
 """
 Exercise 2.6
@@ -108,7 +125,10 @@ print("Exercise 2.6")
 
 pass
 
-print("---")
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
 
 """
 Exercise 2.7
@@ -130,17 +150,19 @@ You should be able to give any value to row and see a triangle made out of 'o's.
 Hint: Before you start coding, think what set of instructions (algorithm) 
 your code needs to carry out for a certain value of rows.
 ------
-"""
+
+for i in 
 
 print("Exercise 2.7")
 
 rows = 5
 pass
 
-print("---")
+
 
 """
-Exercise 2.8
+
+"""Exercise 2.8
 
 Task:
 ------
@@ -157,12 +179,14 @@ Write code that prints the multiplication table:
  10  20  30  40  50  60  70  80  90 100
 
 Hint: One of the two links at the top of this script contains helpful information
-on how to align the numbers.
-------
-"""
+on how to align the numbers."""
 
 print("Exercise 2.8")
 
 pass
 
-print("---")
+for i in range(1, 11):
+    for j in range(1, 11):
+        number = str(i * j)
+        print(number.rjust(4), end="")
+    print()
